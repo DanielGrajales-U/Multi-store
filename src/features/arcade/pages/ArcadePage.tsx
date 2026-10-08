@@ -5,7 +5,7 @@ import { ReadingModal } from "../components/ReadingModal";
 import { useArcade } from "../hooks/useArcade";
 import type { ArcadeMachine } from "../types/arcade.types";
 
-export const ArcadePage = () => {
+const ArcadePage = () => {
 	const { machines, isLoading, error, refresh, submitReading } = useArcade();
 	const [selectedMachine, setSelectedMachine] = useState<ArcadeMachine | null>(
 		null,
@@ -77,3 +77,5 @@ export const ArcadePage = () => {
 		</div>
 	);
 };
+
+export default ArcadePage;

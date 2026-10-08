@@ -1,5 +1,3 @@
-// src/store/useAuthStore.ts
-
 import type { Session } from "@supabase/supabase-js";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
